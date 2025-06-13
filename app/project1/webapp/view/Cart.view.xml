@@ -1,0 +1,13 @@
+<mvc:View controllerName="lensmart.controller.Cart" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+<VBox id="_IDGenVBox6" class="sapUiContentPadding">
+<Title id="_IDGenTitle1" text="Your Shopping Cart" level="H2" class="sapUiTinyMarginBottom"/>
+<List id="_IDGenList" items="{cartModel>/items}" headerText="Cart Items">
+<StandardListItem id="_IDGenStandardListItem" title="{cartModel>name}" description="₹{cartModel>price}" icon="sap-icon://product"/>
+</List>
+<HBox id="_IDGenHBox3" justifyContent="End" class="sapUiTinyMarginTop">
+<Button id="_IDGenButton6" text="Checkout" type="Emphasized" press="onCheckout" icon="sap-icon://accept"/>
+<Button id="_IDGenButton7" text="Back to Products" press="onBack" class="sapUiTinyMarginBegin"/>
+</HBox>
+</VBox>
+</mvc:View>
+ 

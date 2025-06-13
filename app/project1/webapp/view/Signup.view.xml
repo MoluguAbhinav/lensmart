@@ -1,0 +1,21 @@
+<mvc:View controllerName="project1.controller.Signup" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+<VBox id="_IDGenVBox1" class="sapUiContentPadding" justifyContent="Center" alignItems="Center">
+<Panel id="_IDGenPanel1" headerText="Create Account" class="sapUiSmallMargin" width="30rem">
+<VBox id="_IDGenVBox2" class="sapUiSmallMargin">
+<Label id="_IDGenLabel2" text="Email" labelFor="email"/>
+<Input id="email1" placeholder="Enter your email"/>
+<Label id="_IDGenLabel3" text="Username" labelFor="username"/>
+<Input id="username" placeholder="Choose a username"/>
+<Label id="_IDGenLabel4" text="Mobile Number" labelFor="mobile"/>
+<Input id="mobile" placeholder="Enter mobile number" type="Tel"/>
+<Label id="_IDGenLabel5" text="Password" labelFor="password"/>
+<Input id="password1" type="Password" placeholder="Create password"/>
+<Label id="_IDGenLabel6" text="Confirm Password" labelFor="confirmPassword"/>
+<Input id="confirmPassword" type="Password" placeholder="Confirm your password"/>
+<Button id="_IDGenButton1" text="Submit" type="Emphasized" press="onSubmit" class="sapUiTinyMarginTop"/>
+<Link id="_IDGenLink1" text="Already have an account? Sign In" press="onNavToLogin" class="sapUiTinyMarginTop"/>
+</VBox>
+</Panel>
+</VBox>
+</mvc:View>
+ 

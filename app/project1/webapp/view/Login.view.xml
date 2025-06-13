@@ -1,0 +1,20 @@
+<mvc:View
+  controllerName="project1.controller.Login"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+  
+  <VBox id="_IDGenVBox3" class="sapUiContentPadding" justifyContent="Center" alignItems="Center">
+    <Panel id="_IDGenPanel2" headerText="Welcome Back!" class="sapUiSmallMargin" width="30rem">
+      <VBox id="_IDGenVBox4" class="sapUiSmallMargin">
+        <Label id="_IDGenLabel" text="Email" labelFor="email"/>
+        <Input id="email" type="Email" placeholder="Enter your email"/>
+        
+        <Label id="_IDGenLabel1" text="Password" labelFor="password"/>
+        <Input id="password" type="Password" placeholder="Enter your password"/>
+        
+        <Button id="_IDGenButton" text="Login" type="Emphasized" press="onlogin" class="sapUiTinyMarginTop"/>
+        <Link id="_IDGenLink" text="Don't have an account? Sign Up" press="onNavToSignup" class="sapUiTinyMarginTop"/>
+      </VBox>
+    </Panel>
+  </VBox>
+</mvc:View>

@@ -1,0 +1,25 @@
+<mvc:View controllerName="project1.controller.ProductList" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+<VBox id="_IDGenVBox" class="sapUiContentPadding">
+<HBox id="_IDGenHBox" justifyContent="SpaceBetween" alignItems="Center" class="sapUiSmallMarginBottom">
+<Title id="_IDGenTitle" text="Available Products" level="H2"/>
+<HBox id="_IDGenHBox1">
+<Label id="_IDGenLabel7" text="Max Price:" class="sapUiSmallMarginEnd"/>
+<Input id="priceInput" width="8rem" placeholder="₹"/>
+<Button id="_IDGenButton3" text="Filter" icon="sap-icon://filter" press="onApplyFilter" class="sapUiSmallMarginBegin"/>
+</HBox>
+</HBox>
+<List id="productList" items="{/Products}" headerText="Product List" mode="None">
+<CustomListItem id="_IDGenCustomListItem">
+<HBox id="_IDGenHBox2" alignItems="Center" class="sapUiTinyMargin">
+<Image id="_IDGenImage" src="{imageUrl}" width="4rem" height="4rem" class="sapUiSmallMarginEnd"/>
+<VBox id="_IDGenVBox5">
+<Text id="_IDGenText" text="{name}" class="sapUiTinyMarginBottom" />
+<Text id="_IDGenText1" text="Brand: {brand} | ₹{price}" />
+</VBox>
+<Button id="_IDGenButton4" text="Add to Cart" type="Emphasized" press="onAddToCart" class="sapUiTinyMarginBegin sapUiTinyMarginTop"/>
+</HBox>
+</CustomListItem>
+</List>
+<Button id="_IDGenButton5" text="View Cart" icon="sap-icon://cart" type="Emphasized" press="onNavToCart" class="sapUiTinyMarginTop"/>
+</VBox>
+</mvc:View>
